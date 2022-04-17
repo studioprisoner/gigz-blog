@@ -8,7 +8,7 @@ import type { Blog } from 'contentlayer/generated';
 const editUrl = (slug) =>
     `https://github.com/studioprisoner/gigz-blog/edit/main/data/blog/${slug}.mdx`;
 const discussUrl = (slug) =>
-    `https://mobile.twitter.com/search?q=${endcodeURIComponent(
+    `https://mobile.twitter.com/search?q=${encodeURIComponent(
         `https://gigz.app/blog${slug}`
     )}`;
 
@@ -21,7 +21,7 @@ export default function BlogLayout({
             title={`${post.title} - Gigz`}
             description={post.summary}
             image={`https://gigz.app${post.image}`}
-            date={new Date(post.publisedAt).toISOString()}
+            date={new Date(post.publishedAt).toISOString()}
             type="article"
         >
             <article className='flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16'>
@@ -39,17 +39,17 @@ export default function BlogLayout({
                         />
                         <p className='ml-2 text-sm text-gray-700 dark:text-gray-300'>
                             {'Josh Illichmann / '}
-                            {format(parseISO(post.publisedAt), 'MMMM dd, yyyy')}
+                            {format(parseISO(post.publishedAt), 'MMMM dd, yyyy')}
                         </p>
                     </div>
-                    <p className='mt-2 text-sm text-gray-600 dark:text-gray-400 min-w-32 md:mt-0'>
+                    <p className='mt-2 text-sm text-white dark:text-white min-w-32 md:mt-0'>
                         {post.readingTime.text}
                     </p>
                 </div>
-                <div className='w-full mt-4 prose dark:prose-dark max-w-none'>
+                <div className='w-full mt-4 prose-slate max-w-none'>
                     {children}
                 </div>
-                <div className='text-sm text-gray-700 dark:text-gray-300'>
+                <div className='text-sm text-white dark:text-white'>
                     <a
                         href={discussUrl(post.slug)}
                         target="_blank"

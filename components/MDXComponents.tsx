@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import ImageWithTheme from './ImageWithTheme';
 
 
-const CustomeLink = (props) => {
-    const href = href.props;
+const CustomLink = (props) => {
+    const href = props.href;
     const isInternalink = href && (href.startsWith('/') || href.startsWith('#'));
 
     if (isInternalink) {

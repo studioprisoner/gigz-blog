@@ -21,10 +21,10 @@ export default function Blog({
             description="Sharing the design and development journey of Gigz."
         >
             <div className='flex flex-col items-start justify-center max-w-2xl mx-auto mb-16'>
-                <h1 className='mb-4 text-3xl font-bold trcking-tight text-black md:text-5xl dark:text-white'>
+                <h1 className='mb-4 text-3xl font-bold trcking-tight text-white md:text-5xl dark:text-white'>
                     Blog
                 </h1>
-                <p className='mb-4 text-gray-600 dark:text-gray-400'>
+                <p className='mb-4 text-white dark:text-white'>
                     {`Join us as we document the design and development journey of Gigz. We will be posting here periodically with updates on what we are doing, whether it be posting design decisions and how we are building the backend too.
                     Use the search below to filter by title.`}
                 </p>
@@ -53,27 +53,9 @@ export default function Blog({
                 </div>
                 {!searchValue && (
                     <>
-                        <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
-                        Most Popular
-                        </h3>
-                        <BlogPost
-                        title="Rust Is The Future of JavaScript Infrastructure"
-                        summary="Why is Rust being used to replace parts of the JavaScript web ecosystem like minification (Terser), transpilation (Babel), formatting (Prettier), bundling (webpack), linting (ESLint), and more?"
-                        slug="rust"
-                        />
-                        <BlogPost
-                        title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-                        summary="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
-                        slug="style-guides-component-libraries-design-systems"
-                        />
-                        <BlogPost
-                        title="Creating a Monorepo with Lerna & Yarn Workspaces"
-                        summary="In this guide, you will learn how to create a Monorepo to manage multiple packages with a shared build, test, and release process."
-                        slug="monorepo-lerna-yarn-workspaces"
-                        />
                     </>
                     )}
-                    <h3 className='mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white'>
+                    <h3 className='mt-8 mb-4 text-2xl font-bold tracking-tight text-white md:text-4xl dark:text-white'>
                         All Posts
                     </h3>
                     {!filteredBlogPosts.length && (
