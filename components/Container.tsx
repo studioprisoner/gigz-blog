@@ -46,7 +46,7 @@ export default function Container(props) {
     };
 
     return (
-        <div className='min-h-screen bg-white dark:bg-hero-background'>
+        <div className='min-h-screen bg-hero-background bg-cover'>
             <Head>
                 <title>{meta.title}</title>
                 <meta name="robots" content="follow, index" />
