@@ -2,16 +2,16 @@ import { useState } from 'react';
 
 import Container from '../components/Container';
 import BlogPost from '../components/BlogPost';
-import { InferGetServerSidePropsType } from 'next';
+import { InferGetStaticPropsType } from 'next';
 import { pick } from '../lib/utils';
 import  { allBlogs } from 'contentlayer/generated';
 
 export default function Blog({
     posts
-}: InferGetServerSidePropsType<typeof getStaticProps>) {
+  }: InferGetStaticPropsType<typeof getStaticProps>) {
     const [searchValue, setSearchValue] = useState('');
     const filteredBlogPosts = posts.filter((post) =>
-        post.title.toLowerCase().includes(searchValue.toLowerCase())
+      post.title.toLowerCase().includes(searchValue.toLowerCase())
     );
 
     return (
