@@ -27,6 +27,11 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
+.next
+
+public/sitemap.xml
+public/feed.xml
 
 # vercel
 .vercel
