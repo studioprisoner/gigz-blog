@@ -5,7 +5,6 @@ import BlogPost from '../components/BlogPost';
 import { InferGetServerSidePropsType } from 'next';
 import { pick } from '../lib/utils';
 import  { allBlogs } from 'contentlayer/generated';
-import { getStaticProps } from './blog/[slug]'
 
 export default function Blog({
     posts
