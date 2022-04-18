@@ -88,7 +88,7 @@ export default function Container(props) {
                     <button
                         aria-label="Toggle Dark Mode"
                         type="button"
-                        className="w-9 h-9 bg-gray-700 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-pink-300  transition-all"
+                        className="w-9 h-9 bg-pink-300 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-pink-600  transition-all"
                         onClick={() =>
                         setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
                         }
@@ -99,7 +99,7 @@ export default function Container(props) {
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
-                            className="w-5 h-5 text-gray-200 dark:text-gray-200"
+                            className="w-5 h-5 text-pink-600 dark:text-gray-200"
                         >
                             {resolvedTheme === 'dark' ? (
                             <path
