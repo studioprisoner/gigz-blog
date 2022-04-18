@@ -4,7 +4,7 @@ import { allBlogs } from '../.contentlayer/generated/allBlogs.mjs';
 
 async function generate() {
   const feed = new RSS({
-    title: 'Lee Robinson',
+    title: 'Gigz App',
     site_url: 'https://gigz.app',
     feed_url: 'https://gigz.app/feed.xml'
   });
