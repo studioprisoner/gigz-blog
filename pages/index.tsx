@@ -1,6 +1,6 @@
 
 import Container from '../components/Container'
-import Subscribe from '../components/Subscribe'
+import Subscribe from '../components/Subscribe';
 
 export default function Home() {
   return (
@@ -13,6 +13,8 @@ export default function Home() {
                 <span className="block xl:inline">Gigz App</span>{' '}
                 <span className="block xl:inline text-pink-500">Coming Soon</span>
               </h1>
+              <p className="text-white text-base leading-relaxed mt-8">Gigz is a concert companion that helps you store your memories. Now you won’t be able to forget the amazing moments you've experiencd, just tap the app to make them stick!</p>
+              <p className="text-white text-base leading-relaxed mt-8">Coming soon, sign up to join the waiting list.</p>
               <Subscribe />
             </div>
             <div className="col-span-6 flex justify-center">
