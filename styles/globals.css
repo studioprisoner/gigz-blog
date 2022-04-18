@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Epilogue";
+        font-weight: 700;
+        src: url('/assets/fonts/Epilogue-Bold.ttf')
+    }
+    @font-face {
+        font-family: "Epilogue";
+        font-weight: 400;
+        src: url('/assets/fonts/Epilogue-Regular.ttf')
+    }
+}

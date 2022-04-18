@@ -20,10 +20,10 @@ export default function Blog({
             description="Sharing the design and development journey of Gigz."
         >
             <div className='flex flex-col items-start justify-center max-w-2xl mx-auto mb-16'>
-                <h1 className='mb-4 text-3xl font-bold trcking-tight text-white md:text-5xl dark:text-white'>
+                <h1 className='mb-4 text-3xl font-bold trcking-tight text-gray-900 dark:text-white md:text-5xl'>
                     Blog
                 </h1>
-                <p className='mb-4 text-white dark:text-white'>
+                <p className='mb-4 text-gray-900 dark:text-white'>
                     {`Join us as we document the design and development journey of Gigz. We will be posting here periodically with updates on what we are doing, whether it be posting design decisions and how we are building the backend too.
                     Use the search below to filter by title.`}
                 </p>
@@ -54,11 +54,11 @@ export default function Blog({
                     <>
                     </>
                     )}
-                    <h3 className='mt-8 mb-4 text-2xl font-bold tracking-tight text-white md:text-4xl dark:text-white'>
+                    <h3 className='mt-8 mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white md:text-4xl dark:text-white'>
                         All Posts
                     </h3>
                     {!filteredBlogPosts.length && (
-                        <p className="mb-4 text-gray-600 dark:text-gray-400">
+                        <p className="mb-4 text-gray-900 dark:text-white">
                             No posts found.
                         </p>
                         )}
