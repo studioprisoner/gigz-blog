@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "postbuild": "NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-rss.mjs && node ./scripts/generate-sitemap.mjs",
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint"
@@ -19,7 +20,7 @@
     "fathom-client": "^3.4.1",
     "globby": "^13.1.1",
     "next": "12.1.5",
-    "next-contentlayer": "^0.2.3",
+    "next-contentlayer": "^0.2.4",
     "next-themes": "^0.1.1",
     "preact": "^10.7.1",
     "prettier": "^2.6.2",
