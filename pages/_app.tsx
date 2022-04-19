@@ -33,7 +33,12 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return(
     <ThemeProvider attribute="class">
-      <Script afterInteractive data-website-id="caafdd32-5aa9-447c-8752-5018a706f846" src="https://gigz-umami.vercel.app/umami.js" />
+      <Script
+      async
+      defer
+      data-website-id="caafdd32-5aa9-447c-8752-5018a706f846"
+      src="https://gigz-umami.vercel.app/umami.js"
+      data-domains="gigz.app, www.gigz.app" />
       <Component {...pageProps} />
     </ThemeProvider>
   );
