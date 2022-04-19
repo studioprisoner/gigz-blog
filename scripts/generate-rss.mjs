@@ -1,6 +1,8 @@
 import { writeFileSync } from 'fs';
+import dynamic from 'next/dynamic';
 import RSS from 'rss';
-import { allBlogs } from '../.contentlayer/generated/allBlogs.mjs'
+
+const allBlogs = dynamic(() => import('../.contentlayer/generatedallblogs.mjs'))
 
 async function generate() {
   const feed = new RSS({
