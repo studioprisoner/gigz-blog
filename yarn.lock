@@ -17,42 +17,22 @@
   dependencies:
     "regenerator-runtime" "^0.13.4"
 
-"@contentlayer/cli@0.2.3":
-  "integrity" "sha512-MCxf0xbtbkDt/isSu/e95X3t3hRezDUuJjE7QaF4dS0hg5/YP24Jl7XkADvPos1Xbc9ARhE7Agm6KgwMGtKKIA=="
-  "resolved" "https://registry.npmjs.org/@contentlayer/cli/-/cli-0.2.3.tgz"
-  "version" "0.2.3"
+"@contentlayer/cli@0.2.4":
+  "integrity" "sha512-s89/NJibB4A7hkaJeVVik/Rgl/Z0VkOUXPlXj6X/xQG5SwkJfn9S3IKURrw7p5UhLDMctk9Sb4KAdDTQBGOfDg=="
+  "resolved" "https://registry.npmjs.org/@contentlayer/cli/-/cli-0.2.4.tgz"
+  "version" "0.2.4"
   dependencies:
-    "@contentlayer/core" "0.2.3"
-    "@contentlayer/utils" "0.2.3"
+    "@contentlayer/core" "0.2.4"
+    "@contentlayer/utils" "0.2.4"
     "clipanion" "^3.2.0-rc.10"
     "typanion" "^3.7.1"
 
-"@contentlayer/client@0.2.3":
-  "integrity" "sha512-sykfn4dy4Bx3x9VOrehOjnv+pDXHrJnorN1sqpP5WJWR8aLW3kwGwLIrHUVRx+xtLHPR4bWqE31OLqZgZYVc/Q=="
-  "resolved" "https://registry.npmjs.org/@contentlayer/client/-/client-0.2.3.tgz"
-  "version" "0.2.3"
+"@contentlayer/client@0.2.4":
+  "integrity" "sha512-TQnByGWjYTboHbf6bzu7V3AZiwq2NUXLTtGI6jnNV/2WmVW77dQgx5R8JUo3nCMFRgz8yzVxEMJDpExYv40hAg=="
+  "resolved" "https://registry.npmjs.org/@contentlayer/client/-/client-0.2.4.tgz"
+  "version" "0.2.4"
   dependencies:
-    "@contentlayer/core" "0.2.3"
-
-"@contentlayer/core@0.2.3":
-  "integrity" "sha512-JqTtSU4b++LmaRvmK/sDKYArqQUK3J7G3kLdOxtwsI90h6FvptA3N1xNEkYbfnr+OaOdR61NyWPnGdkF2CrZpA=="
-  "resolved" "https://registry.npmjs.org/@contentlayer/core/-/core-0.2.3.tgz"
-  "version" "0.2.3"
-  dependencies:
-    "@contentlayer/utils" "0.2.3"
-    "camel-case" "^4.1.2"
-    "comment-json" "^4.2.2"
-    "date-fns" "2.x"
-    "esbuild" "0.11.x || 0.12.x || 0.13.x || 0.14.x"
-    "gray-matter" "^4.0.3"
-    "mdx-bundler" "^9.0.0"
-    "rehype-stringify" "^9.0.3"
-    "remark-frontmatter" "^4.0.1"
-    "remark-parse" "^10.0.1"
-    "remark-rehype" "^10.1.0"
-    "source-map-support" "^0.5.21"
-    "type-fest" "^2.12.1"
-    "unified" "^10.1.2"
+    "@contentlayer/core" "0.2.4"
 
 "@contentlayer/core@0.2.4":
   "integrity" "sha512-to5timE8OdZffWuVl2Ra2dSZ5dj1S8QIzqJ714s1wZqtUOhG2mlM8SSMvAGggWjOEa5h0aJ6GYh0TeucCmUY3Q=="
@@ -74,13 +54,13 @@
     "type-fest" "^2.12.1"
     "unified" "^10.1.2"
 
-"@contentlayer/source-files@0.2.3":
-  "integrity" "sha512-8hX7GRsFQLo/Z8X3qmx4JxoXHkIxZj4Y1YFTCmeF4KJWuOO4g1JX69a9rStLn109d+oaqvLgg2b6MvLy0UVjRw=="
-  "resolved" "https://registry.npmjs.org/@contentlayer/source-files/-/source-files-0.2.3.tgz"
-  "version" "0.2.3"
+"@contentlayer/source-files@0.2.4":
+  "integrity" "sha512-LSA67Gan40y+ISbhzvBLIQdVfgrJtaQFRAJwjvI0LD5+wsD3Ba0hSAao20If5DdKapXT/JyLpUb6vT7bUEMGsw=="
+  "resolved" "https://registry.npmjs.org/@contentlayer/source-files/-/source-files-0.2.4.tgz"
+  "version" "0.2.4"
   dependencies:
-    "@contentlayer/core" "0.2.3"
-    "@contentlayer/utils" "0.2.3"
+    "@contentlayer/core" "0.2.4"
+    "@contentlayer/utils" "0.2.4"
     "chokidar" "^3.5.3"
     "date-fns-tz" "^1.3.1"
     "glob" "^7.2.0"
@@ -90,29 +70,6 @@
     "ts-pattern" "^4.0.1"
     "unified" "^10.1.2"
     "yaml" "^1.10.2"
-
-"@contentlayer/utils@0.2.3":
-  "integrity" "sha512-HBOoZ/M8qKq0lYgJ8fqnkAWygLG9u2120WwVUAHor+J2OGEjK/MRzggTNjmSRzbTNjgr86r9TR1sEpc+Ueb8jQ=="
-  "resolved" "https://registry.npmjs.org/@contentlayer/utils/-/utils-0.2.3.tgz"
-  "version" "0.2.3"
-  dependencies:
-    "@effect-ts/core" "^0.58.0"
-    "@effect-ts/otel" "^0.13.0"
-    "@effect-ts/otel-exporter-trace-otlp-grpc" "^0.13.0"
-    "@effect-ts/otel-sdk-trace-node" "^0.13.0"
-    "@opentelemetry/api" "^1.0.3"
-    "@opentelemetry/core" "^1.0.0"
-    "@opentelemetry/exporter-trace-otlp-grpc" "^0.27.0"
-    "@opentelemetry/resources" "^1.0.0"
-    "@opentelemetry/sdk-trace-base" "^1.0.0"
-    "@opentelemetry/sdk-trace-node" "^1.0.0"
-    "@opentelemetry/semantic-conventions" "^1.0.0"
-    "chokidar" "^3.5.3"
-    "hash-wasm" "^4.9.0"
-    "inflection" "^1.13.2"
-    "oo-ascii-tree" "^1.56.0"
-    "ts-pattern" "^4.0.1"
-    "type-fest" "^2.12.1"
 
 "@contentlayer/utils@0.2.4":
   "integrity" "sha512-Sff9k7C3eMMwOPLT42m5XM/oRAT7jPas76pqp2rm6OQxjV3FpInGeNT+ryZm2lKwa0krL67fjzYj+OkkFZAOGw=="
@@ -995,16 +952,16 @@
   "resolved" "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   "version" "0.0.1"
 
-"contentlayer@^0.2.3":
-  "integrity" "sha512-sjB3QR04uhVMhldGAu7WrhcYE8PbtP3t6YY3VmDmgr/UkptLQxmpr+YuZkZ6Nwjt+m9NpAso4t8V6RUyWqThHw=="
-  "resolved" "https://registry.npmjs.org/contentlayer/-/contentlayer-0.2.3.tgz"
-  "version" "0.2.3"
+"contentlayer@^0.2.4":
+  "integrity" "sha512-3Qd2rU64wcZ3qXvNkP18mqU5Gq4VTSvJkfMqbTWRG4fx1bjXqihmcErCa9RXIQWc7e/7EgAAIBihcQqSFYWyrg=="
+  "resolved" "https://registry.npmjs.org/contentlayer/-/contentlayer-0.2.4.tgz"
+  "version" "0.2.4"
   dependencies:
-    "@contentlayer/cli" "0.2.3"
-    "@contentlayer/client" "0.2.3"
-    "@contentlayer/core" "0.2.3"
-    "@contentlayer/source-files" "0.2.3"
-    "@contentlayer/utils" "0.2.3"
+    "@contentlayer/cli" "0.2.4"
+    "@contentlayer/client" "0.2.4"
+    "@contentlayer/core" "0.2.4"
+    "@contentlayer/source-files" "0.2.4"
+    "@contentlayer/utils" "0.2.4"
 
 "core-js-pure@^3.20.2":
   "integrity" "sha512-ylOC9nVy0ak1N+fPIZj00umoZHgUVqmucklP5RT5N+vJof38klKn8Ze6KGyvchdClvEBr6LcQqJpI216LUMqYA=="
