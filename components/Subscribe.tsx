@@ -67,6 +67,7 @@ export default function Subscribe() {
           {form.state === Form.Loading ? <LoadingSpinner /> : 'Subscribe'}
         </button>
       </form>
+      <p className='text-gray-600 dark:text-white text-sm my-6 leading-4 antialiased'>Signing up, will also subscribe you to my newsletter. We value your privacy and will not be sharing your email address with any outside parties.</p>
       {form.state === Form.Error ? (
         <ErrorMessage>{form.message}</ErrorMessage>
       ) : form.state === Form.Success ? (

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const ExternalLink = ({ href, children }) => (
   <a 
-    className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 transition'
+    className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 font-epilogue transition'
     target='_blank'
     rel='noopener noreferrer'
     href={href}
@@ -18,13 +18,10 @@ const ExternalLink = ({ href, children }) => (
           <div className='w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3'>
             <div className='flex flex-col space-y-4'>
               <Link href='/'>
-                <a className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 transition'>Home</a>
-              </Link>
-              <Link href='/about'>
-                <a className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 transition'>About</a>
+                <a className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 font-epilogue transition'>Home</a>
               </Link>
               <Link href='/blog'>
-                <a className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 transition'>Blog</a>
+                <a className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 font-epilogue transition'>Blog</a>
               </Link>
             </div>
             <div className='flex flex-col space-y-4'>

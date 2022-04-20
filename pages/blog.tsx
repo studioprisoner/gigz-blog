@@ -19,7 +19,7 @@ export default function Blog({
             title="Blog | Gigz App"
             description="Sharing the design and development journey of Gigz."
         >
-            <div className='flex flex-col items-start justify-center max-w-2xl mx-auto mb-16'>
+            <div className='flex flex-col items-start justify-center max-w-4xl mx-auto mb-16'>
                 <h1 className='mb-4 text-3xl font-bold trcking-tight text-gray-900 dark:text-white md:text-5xl'>
                     Blog
                 </h1>
