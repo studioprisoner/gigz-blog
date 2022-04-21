@@ -42,3 +42,5 @@ public/feed.xml
 
 # Contentlayer
 .contentlayer
+prisma/migrations/migration_lock.toml
+prisma/migrations/20220421125115_init/migration.sql
