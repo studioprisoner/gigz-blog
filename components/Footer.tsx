@@ -18,12 +18,8 @@ const ExternalLink = ({ href, children }) => (
         <div className="flex flex-col justify-center intems-start max-w-4xl mx-auto w-full">
           <div className='w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3'>
             <div className='flex flex-col space-y-4'>
-              <Link href='/'>
-                <a className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 font-epilogue transition'>Home</a>
-              </Link>
-              <Link href='/blog'>
-                <a className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 font-epilogue transition'>Blog</a>
-              </Link>
+               <a href='/' className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 font-epilogue transition'>Home</a>
+                <a href='/blog' className='text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 font-epilogue transition'>Blog</a>
             </div>
             <div className='flex flex-col space-y-4'>
               <ExternalLink href="https://twitter.com/gigz_app">
