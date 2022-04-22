@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import Link from 'next/link';
 import cn from 'classnames';
 
 import Footer from '../components/Footer';
@@ -13,8 +12,7 @@ function NavItem({ href, text }) {
     const isActive = router.asPath === href;
 
     return (
-        <Link href={href}>
-            <a
+            <a  href={href}
                 className={cn(
                     isActive
                     ? 'font-semibold font-epilogue text-gray-900 dark:text-white dark:hover:text-pink-500'
@@ -24,7 +22,6 @@ function NavItem({ href, text }) {
                 >
                     <span className='capsize'>{text}</span>
                 </a>
-        </Link>
     );
 }
 
