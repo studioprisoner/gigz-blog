@@ -2,9 +2,12 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import Script from 'next/script'
+import { UMAMI_SCRIPT_URL, UMAMI_WEBSITE_ID } from 'lib/umami'
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as Fathom from 'fathom-client';
+
+const isProduction = process.env.NODE_ENV === 'production';
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -33,12 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return(
     <ThemeProvider attribute="class">
-      <Script
-      async
-      defer
-      data-website-id="caafdd32-5aa9-447c-8752-5018a706f846"
-      src="https://gigz-umami.vercel.app/umami.js"
-      data-domains="gigz.app, www.gigz.app" />
+      {isProduction && <Script src={UMAMI_SCRIPT_URL} data-website-id={UMAMI_WEBSITE_ID} />}
       <Component {...pageProps} />
     </ThemeProvider>
   );
