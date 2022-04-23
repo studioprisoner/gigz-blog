@@ -37,7 +37,7 @@ export default function Container(props) {
     const meta = {
         title: 'Gigz App | Coming Soon.',
         description: `Gigz is a companion app to help you remember your live music memories`,
-        image: '',
+        image: '/assets/img/gigz-card.jpg',
         type: 'website',
         ...customMeta
     };
