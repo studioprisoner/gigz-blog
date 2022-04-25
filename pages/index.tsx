@@ -13,7 +13,7 @@ export default function Home() {
                 <span className="block xl:inline">Gigz App</span>{' '}
                 <span className="block xl:inline text-pink-500">Coming Soon</span>
               </h1>
-              <p className="text-gray-900 dark:text-white text-base leading-relaxed mt-8">Gigz is a concert companion that helps you store your memories. Now you will not be able to forget the amazing moments you&#39;ve experiencd, just tap the app to make them stick!</p>
+              <p className="text-gray-900 dark:text-white text-base leading-relaxed mt-8">Gigz is a concert companion that helps you store your memories. Now you will not be able to forget the amazing moments you&#39;ve experienced, just tap the app to make them stick!</p>
               <p className="text-gray-900 dark:text-white text-base leading-relaxed mt-8">Coming soon, sign up to join the waiting list.</p>
               <Subscribe />
             </div>
