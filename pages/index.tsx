@@ -17,7 +17,7 @@ export default function Home() {
               <p className="text-gray-900 dark:text-white text-base leading-relaxed mt-8">Coming soon, sign up to join the waiting list.</p>
               <Subscribe />
             </div>
-            <div className="col-span-6 flex justify-center">
+            <div className="col-span-4 flex justify-center">
               <img
                 className=""
                 src="/assets/img/iphone-13.png"
