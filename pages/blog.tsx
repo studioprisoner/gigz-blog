@@ -54,7 +54,7 @@ export default function Blog({
                     <>
                     </>
                     )}
-                    <h3 className='mt-8 mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white md:text-4xl'>
+                    <h3 className='mt-8 mb-4 text-2xl font-bold font-epilogue tracking-tight text-gray-900 dark:text-white md:text-4xl'>
                         All Posts
                     </h3>
                     {!filteredBlogPosts.length && (
