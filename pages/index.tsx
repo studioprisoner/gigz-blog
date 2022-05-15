@@ -5,7 +5,7 @@ import Subscribe from '../components/Subscribe';
 export default function Home() {
   return (
     <Container>
-      <div className='relative max-w-3xl mx-auto py-32 px-6 flex flex-col items-center text-center sm:py-64 lg:px-0'>
+      <div className='relative max-w-3xl mx-auto py-16 px-6 flex flex-col items-center text-center sm:py-32 lg:px-0'>
           <h1 className='text-6xl tracking-tight font-extrabold text-slate-800 sm:text-5xl md:text-8xl'>
             <span>Gigz app, </span>
             <span className='bg-gradient-to-r from-gigz-purple via-blue-500 to-gigz-pink bg-clip-text text-transparent'>store them all</span>
