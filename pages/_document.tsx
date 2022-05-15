@@ -4,7 +4,7 @@ export default function Document(props) {
   return (
     <Html lang="en">
       <Head>
-        <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
+        <link type="image/png" href="/static/favicons/favicon.png" rel="shortcut icon" />
         <link
           rel="preconnect"
           href="https://cdn.usefathom.com"
