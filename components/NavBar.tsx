@@ -47,7 +47,7 @@ export default function NavBar() {
                         <a
                           key={item.name}
                           href={item.href}
-                          className='text-slate-800 hover:text-gigz-pink px-3 py-2 rounded-md text-base font-bold'
+                          className='text-slate-800 hover:text-gigz-pink px-3 py-2 rounded-md text-xl font-bold'
                         >
                           {item.name}
                         </a>
