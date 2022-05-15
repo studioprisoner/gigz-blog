@@ -18,12 +18,13 @@ export default function Blog({
         <Container
             title="Blog | Gigz App"
             description="Sharing the design and development journey of Gigz."
-        >
-            <div className='flex flex-col items-start justify-center max-w-4xl mx-auto mb-16'>
-                <h1 className='mb-4 text-3xl font-bold trcking-tight text-gray-900 dark:text-white md:text-5xl'>
+        >   
+        <div className='py-32 px-2'>
+            <div className='flex flex-col items-start justify-center max-w-6xl mx-auto mb-16 bg-white p-6 border border-slate-200 rounded-md shadow-md'>
+                <h1 className='mb-4 text-3xl font-bold trcking-tight text-gigz-pink dark:text-white md:text-5xl'>
                     Blog
                 </h1>
-                <p className='mb-4 text-gray-900 dark:text-white'>
+                <p className='mb-4 text-slate-800 dark:text-white'>
                     {`Join us as we document the design and development journey of Gigz. We will be posting here periodically with updates on what we are doing, whether it be posting design decisions and how we are building the backend too.
                     Use the search below to filter by title.`}
                 </p>
@@ -33,7 +34,7 @@ export default function Blog({
                         type="text"
                         onChange={(e) => setSearchValue(e.target.value)}
                         placeholder="Search articles"
-                        className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
+                        className="block w-full px-4 py-2 text-slate-800 bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
                     />
                     <svg
                         className="absolute w-5 h-5 text-gray-400 right-3 top-3 dark:text-gray-300"
@@ -54,17 +55,18 @@ export default function Blog({
                     <>
                     </>
                     )}
-                    <h3 className='mt-8 mb-4 text-2xl font-bold font-epilogue tracking-tight text-gray-900 dark:text-white md:text-4xl'>
+                    <h3 className='mt-8 mb-4 text-2xl font-bold font-epilogue tracking-tight text-slate-800 dark:text-white md:text-4xl'>
                         All Posts
                     </h3>
                     {!filteredBlogPosts.length && (
-                        <p className="mb-4 text-gray-900 dark:text-white">
+                        <p className="mb-4 text-slate-800 dark:text-white">
                             No posts found.
                         </p>
                         )}
                         {filteredBlogPosts.map((post) => (
                         <BlogPost key={post.title} {...post} />
                     ))}
+            </div>
             </div>
         </Container>
     );

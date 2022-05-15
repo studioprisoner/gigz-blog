@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import NavBar from './NavBar';
 import Footer from '../components/Footer';
 
-export default function Container(props) {
+export default function NewContainer(props) {
 
     const { children, ...customMeta } = props;
     const router = useRouter();
@@ -17,7 +17,7 @@ export default function Container(props) {
     };
 
     return (
-        <div className='relative bg-white bg-speaker-pattern bg-pattern'>
+        <div className='relative bg-gigz-yellow overflow-hidden'>
             <Head>
                 <title>{meta.title}</title>
                 <meta name="robots" content="follow, index" />

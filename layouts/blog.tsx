@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { parseISO, format } from 'date-fns';
 
-import Continer from '../components/Container';
+import Container from '../components/Container';
 import type { PropsWithChildren } from 'react';
 import type { Blog } from 'contentlayer/generated';
 
@@ -17,15 +17,16 @@ export default function BlogLayout({
     post
 }: PropsWithChildren<{ post: Blog }>) {
     return (
-        <Continer
+        <Container
             title={`${post.title} - Gigz`}
             description={post.summary}
             image={`https://gigz.app${post.image}`}
             date={new Date(post.publishedAt).toISOString()}
             type="article"
         >
-            <article className='flex flex-col items-start justify-center w-full max-w-4xl mx-auto mb-16'>
-                <h1 className='mb-4 text-3xl font-bold trcking-tight text-gray-900 dark:text-white md:text-5xl'>
+            <div className='py-6 px-2'>
+            <article className='flex flex-col items-start justify-center w-full max-w-6xl mx-auto mb-16 bg-white p-6 border border-slate-200 rounded-md shadow-md'>
+                <h1 className='mb-4 text-3xl font-bold trcking-tight text-gigz-purple dark:text-white md:text-5xl'>
                     {post.title}
                 </h1>
                 <div className='flex flex-col items-start justify-between w-full mt-2 md:flex-row md:items-center'>
@@ -37,12 +38,12 @@ export default function BlogLayout({
                             src="/avatar.jpg"
                             className='rounded-full'
                         />
-                        <p className='ml-2 text-sm text-gray-900 dark:text-white'>
+                        <p className='ml-2 text-sm text-slate-800 dark:text-white'>
                             {'Josh Illichmann / '}
                             {format(parseISO(post.publishedAt), 'MMMM dd, yyyy')}
                         </p>
                     </div>
-                    <p className='mt-2 text-sm text-gray-900 dark:text-white min-w-32 md:mt-0'>
+                    <p className='mt-2 text-sm text-slate-800 dark:text-white min-w-32 md:mt-0'>
                         {post.readingTime.text}
                     </p>
                 </div>
@@ -69,6 +70,7 @@ export default function BlogLayout({
                     </a>
                 </div>
             </article>
-        </Continer>
+            </div>
+        </Container>
     );
 }

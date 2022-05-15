@@ -6,8 +6,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-background': "url('/assets/img/bg.webp')",
+        'speaker-pattern': "url('/assets/img/speaker-pattern.png')",
         'hero-background-light': "url('/assets/img/bg-light.webp')"
+      },
+      colors: {
+        'gigz-purple': '#852DF5',
+        'gigz-pink': '#FF154D',
+        'gigz-green': '#1CF5BD',
+        'gigz-yellow': '#DDFF0E',
+        'gigz-orange': '#FF9736'
       },
       fontFamily: {
         epilogue: "'Epilogue'"

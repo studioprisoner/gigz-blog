@@ -8,7 +8,7 @@ import SuccessMessage from 'components/SuccessMessage';
 import ErrorMessage from 'components/ErrorMessage';
 import LoadingSpinner from 'components/LoadingSpinner';
 
-export default function Subscribe() {
+export default function NewSubscribe() {
   const [form, setForm] = useState<FormState>({ state: Form.Initial });
   const inputEl = useRef(null);
   const { data } = useSWR<Subscribers>('/api/subscribe', fetcher);
@@ -46,16 +46,17 @@ export default function Subscribe() {
   };
 
   return (
-    <div id="skip" className='bg-gigz-purple py-16 px-4 sm:py-24'>
-      <div className="relative">
-              <div className="sm:text-center">
-                <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-                  Get notified when we&rsquo;re launching
+    <div id="skip" className='bg-white'>
+      <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:py-32 lg:px-8 lg:flex lg:items-center">
+              <div className="lg:w-0 lg:flex-1">
+                <h2 className="text-3xl font-extrabold text-gigz-pink sm:text-4xl">
+                What to be part of the test team?
                 </h2>
-                <p className="mt-6 mx-auto max-w-2xl text-lg text-indigo-200">
-                Gigz is still in a phase of desing and development. We would love to have you sign up to our newsletter and be part of testing.
+                <p className="mt-3 max-w-3xl text-lg text-slate-800">
+                Gigz is still in a phase of desing and development. We would love to have you sign up to our newsletter where we&rsquo;ll be sending out updates on progress and even some articles on music.
                 </p>
               </div>
+              <div className='mt-8 lg:mt-0 lg:ml-8'>
               <form onSubmit={subscribe} className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
                 <div className="min-w-0 flex-1">
                   <label htmlFor="cta-email" className="sr-only">
@@ -68,13 +69,13 @@ export default function Subscribe() {
                     type="email"
                     autoComplete="email"
                     required
-                    className="block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
+                    className="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-gigz-pink focus:border-gigz-pink sm:max-w-xs rounded-md"
                   />
                 </div>
                 <div className="mt-4 sm:mt-0 sm:ml-3">
                   <button
                     type="submit"
-                    className="block w-full rounded-md border border-transparent px-5 py-3 bg-gigz-pink text-base font-bold text-white shadow hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10"
+                    className="block w-full rounded-md border border-transparent px-5 py-3 bg-gigz-pink text-base font-bold text-white shadow hover:bg-gigz-purple focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gigz-pink sm:px-10"
                   >
                     {form.state === Form.Loading ? <LoadingSpinner /> : 'Subscribe'}
                   </button>
@@ -91,6 +92,7 @@ export default function Subscribe() {
                   } subscribers – `}
                 </p>
               )}
+              </div>
             </div>
       </div>
   );

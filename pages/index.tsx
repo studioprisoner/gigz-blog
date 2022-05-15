@@ -5,28 +5,19 @@ import Subscribe from '../components/Subscribe';
 export default function Home() {
   return (
     <Container>
-      <div className='py-16'>
-        <div className="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-            <div className="col-span-8">
-              <h1 className="font-bold font-epilogue text-4xl md:text-5xl max-x-xl text-gray-900 dark:text-white leading-light">
-                <span className="block xl:inline">Gigz App</span>{' '}
-                <span className="block xl:inline text-pink-500">Coming Soon</span>
-              </h1>
-              <p className="text-gray-900 dark:text-white text-base leading-relaxed mt-8">Gigz is a concert companion that helps you store your memories. Now you will not be able to forget the amazing moments you&#39;ve experienced, just tap the app to make them stick!</p>
-              <p className="text-gray-900 dark:text-white text-base leading-relaxed mt-8">Coming soon, sign up to join the waiting list.</p>
-              <Subscribe />
-            </div>
-            <div className="col-span-4 flex justify-center">
-              <img
-                className=""
-                src="/assets/img/iphone-13.png"
-                alt="Iphone 13 Pro"
-              />
-            </div>
-          </div>
+      <div className='relative max-w-3xl mx-auto py-32 px-6 flex flex-col items-center text-center sm:py-64 lg:px-0'>
+          <h1 className='text-6xl tracking-tight font-extrabold text-slate-800 sm:text-5xl md:text-8xl'>
+            <span>Gigz app, </span>
+            <span className='bg-gradient-to-r from-gigz-purple via-blue-500 to-gigz-pink bg-clip-text text-transparent'>store them all</span>
+          </h1>
+          <p className='mt-3 max-w-md mx-auto text-base text-slate-800 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl'>
+          Gigz is a concert companion that helps you store your memories. Now you will not be able to forget the amazing moments you've experienced, just tap the app to make them stick!
+          </p>
+          <div className='mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8'>
+            <p className='uppercase text-2xl text-slate-800 font-bold sm:text-4xl'>Coming Soon</p>
         </div>
       </div>
+      <Subscribe />
     </Container>
   );
 }
