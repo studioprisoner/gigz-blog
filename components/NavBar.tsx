@@ -31,12 +31,12 @@ export default function NavBar() {
                     >
                     <img
                       className="block lg:hidden h-14 w-auto"
-                      src="/assets/img/gigz-speaker-navbar.svg"
+                      src="https://www.gigz.app/assets/img/gigz-speaker-navbar.svg"
                       alt="Gigz"
                     />
                     <img
                       className="hidden lg:block h-14 w-auto"
-                      src="assets/img/gigz-logo-navbar.svg"
+                      src="https://www.gigz.app/assets/img/gigz-logo-navbar.svg"
                       alt="Gigz"
                     />
                     </a>
