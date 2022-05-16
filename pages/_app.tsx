@@ -2,7 +2,6 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import Script from 'next/script'
-import { UMAMI_SCRIPT_URL, UMAMI_WEBSITE_ID } from 'lib/umami'
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as Fathom from 'fathom-client';
@@ -36,7 +35,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return(
     <ThemeProvider attribute="class">
-      {isProduction && <Script src={UMAMI_SCRIPT_URL} data-website-id={UMAMI_WEBSITE_ID} />}
       <Component {...pageProps} />
     </ThemeProvider>
   );

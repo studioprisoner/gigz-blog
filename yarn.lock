@@ -429,6 +429,11 @@
   "resolved" "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.0.8.tgz"
   "version" "1.0.8"
 
+"@sentry/types@^6.11.0":
+  "integrity" "sha512-jH84pDYE+hHIbVnab3Hr+ZXr1v8QABfhx39KknxqKWr2l0oEItzepV0URvbEhB446lk/S/59230dlUUIBGsXbg=="
+  "resolved" "https://registry.npmjs.org/@sentry/types/-/types-6.19.7.tgz"
+  "version" "6.19.7"
+
 "@tailwindcss/typography@^0.5.2":
   "integrity" "sha512-coq8DBABRPFcVhVIk6IbKyyHUt7YTEC/C992tatFB+yEx5WGBQrCgsSFjxHUr8AWXphWckadVJbominEduYBqw=="
   "resolved" "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.5.2.tgz"
@@ -488,6 +493,11 @@
   "version" "2.3.4"
   dependencies:
     "@types/unist" "*"
+
+"@types/js-cookie@^3.0.2":
+  "integrity" "sha512-6+0ekgfusHftJNYpihfkMu8BWdeHs9EOJuGcSofErjstGPfPGEu9yTu4t460lTzzAMl2cM5zngQJqPMHbbnvYA=="
+  "resolved" "https://registry.npmjs.org/@types/js-cookie/-/js-cookie-3.0.2.tgz"
+  "version" "3.0.2"
 
 "@types/json5@^0.0.29":
   "integrity" "sha1-7ihweulOEdK4J7y+UnC86n8+ce4="
@@ -1542,6 +1552,11 @@
   dependencies:
     "node-domexception" "^1.0.0"
     "web-streams-polyfill" "^3.0.3"
+
+"fflate@^0.4.1":
+  "integrity" "sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA=="
+  "resolved" "https://registry.npmjs.org/fflate/-/fflate-0.4.8.tgz"
+  "version" "0.4.8"
 
 "file-entry-cache@^6.0.1":
   "integrity" "sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg=="
@@ -3213,6 +3228,15 @@
     "picocolors" "^1.0.0"
     "source-map-js" "^1.0.1"
 
+"posthog-js@^1.21.1":
+  "integrity" "sha512-/mf0ezl9DAZp0LA0fupNvII/O0/1IWqsDiLma5oKHpGqyhFA2ObRENxiZvdSt+UFvcXtoieDsW5SoDPZMFvWgA=="
+  "resolved" "https://registry.npmjs.org/posthog-js/-/posthog-js-1.21.1.tgz"
+  "version" "1.21.1"
+  dependencies:
+    "@sentry/types" "^6.11.0"
+    "fflate" "^0.4.1"
+    "rrweb-snapshot" "^1.1.14"
+
 "preact@^10.7.1":
   "integrity" "sha512-MufnRFz39aIhs9AMFisonjzTud1PK1bY+jcJLo6m2T9Uh8AqjD77w11eAAawmjUogoGOnipECq7e/1RClIKsxg=="
   "resolved" "https://registry.npmjs.org/preact/-/preact-10.7.1.tgz"
@@ -3507,6 +3531,11 @@
   "version" "3.0.2"
   dependencies:
     "glob" "^7.1.3"
+
+"rrweb-snapshot@^1.1.14":
+  "integrity" "sha512-eP5pirNjP5+GewQfcOQY4uBiDnpqxNRc65yKPW0eSoU1XamDfc4M8oqpXGMyUyvLyxFDB0q0+DChuxxiU2FXBQ=="
+  "resolved" "https://registry.npmjs.org/rrweb-snapshot/-/rrweb-snapshot-1.1.14.tgz"
+  "version" "1.1.14"
 
 "rss@^1.2.2":
   "integrity" "sha1-UKFpiHYTgTOnT5oF0r3I240nqSE="
