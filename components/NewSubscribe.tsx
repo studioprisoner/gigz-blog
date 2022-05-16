@@ -2,8 +2,8 @@ import { useState, useRef } from 'react';
 import useSWR from 'swr';
 import { trackGoal } from 'fathom-client';
 
-import fetcher from 'lib/fetcher';
-import { Form, FormState, Subscribers } from 'lib/types';
+import fetcher from '@lib/fetcher';
+import { Form, FormState, Subscribers } from '@lib/types';
 import SuccessMessage from 'components/SuccessMessage';
 import ErrorMessage from 'components/ErrorMessage';
 import LoadingSpinner from 'components/LoadingSpinner';

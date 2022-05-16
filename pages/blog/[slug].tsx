@@ -1,6 +1,6 @@
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import components from '../../components/MDXComponents';
-import { getTweets } from 'lib/twitter';
+import { getTweets } from '@lib/twitter';
 import BlogLayout from '../../layouts/blog';
 import Tweet from '../../components/Tweet';
 import { allBlogs } from 'contentlayer/generated';

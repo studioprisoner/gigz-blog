@@ -1,10 +1,37 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { FEATURE_FLAGS } from '@lib/constants'
+import { getPostHogInstance } from '@lib/posthog'
+import { getFeatureFlagVariant } from '@lib/posthog-node'
+import Cookies from 'js-cookie'
+import { useEffect, useState } from 'react'
 
 import NavBar from './NavBar';
 import Footer from '../components/Footer';
 
 export default function Container(props) {
+
+    const resetVariant = () => {
+        const posthog = getPostHogInstance()
+        posthog.reset(true)
+        window.location.reload()
+      }
+
+    const [homePageAvailable, setHomePageAvailable] = useState(false)
+
+      useEffect(() => {
+        const checkHomePageAvailability = async () => {
+          const available = (await getFeatureFlagVariant(
+            Cookies.get('distinct_id'),
+            FEATURE_FLAGS.NEW_INDEX_PAGE
+          ))
+            ? true
+            : false
+          setHomePageAvailable(available)
+        }
+    
+        checkHomePageAvailability()
+      }, [])
 
     const { children, ...customMeta } = props;
     const router = useRouter();
