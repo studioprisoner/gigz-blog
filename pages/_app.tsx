@@ -1,12 +1,14 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
-import Script from 'next/script'
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as Fathom from 'fathom-client';
 
-const isProduction = process.env.NODE_ENV === 'production';
+import Cookies from 'js-cookie'
+import { usePostHog } from '@lib/posthog'
+import { PostHog } from 'posthog-js'
+
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -32,6 +34,15 @@ export default function App({ Component, pageProps }: AppProps) {
       router.events.off('routeChangeComplete', onRouteChangeComplete);
     };
   }, []);
+
+  usePostHog(process.env.NEXT_PUBLIC_POSTHOG_PROJECT_API_KEY, {
+    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
+    loaded: (posthog: PostHog) => {
+      // Set the distinct_id being used by PostHog on the client
+      // so we can also use on the server.
+      Cookies.set('distinct_id', posthog.get_distinct_id())
+    },
+  })
 
   return(
     <ThemeProvider attribute="class">
