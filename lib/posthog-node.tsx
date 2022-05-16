@@ -39,7 +39,7 @@ export async function getFeatureFlagVariant(
   console.log('getFeatureFlagVariant', distinctUserId, featureName)
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_POSTHOG_HOST}`,
+    `${process.env.NEXT_PUBLIC_POSTHOG_HOST}/decide?v=2`,
     {
       method: 'POST',
       body: JSON.stringify({
