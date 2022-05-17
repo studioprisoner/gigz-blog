@@ -13,7 +13,7 @@ export async function middleware(req: NextRequest) {
 
   const newHomePageFlagEnabled = await isFeatureFlagEnabled(
     req.cookies[DISTINCT_ID_COOKIE_NAME],
-    FEATURE_FLAGS.NEW_INDEX_PAGE
+    FEATURE_FLAGS.NEW_HOME_PAGE
   )
   url.pathname = newHomePageFlagEnabled ? '/new_homepage' : '/'
 
