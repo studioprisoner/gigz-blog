@@ -7,7 +7,7 @@ export async function middleware(req: NextRequest) {
 
   // Redirect paths that go directly to the variant
   if (url.pathname != '/') {
-    url.pathname = '/new_homepage'
+    url.pathname = '/'
     return NextResponse.redirect(url)
   }
 
