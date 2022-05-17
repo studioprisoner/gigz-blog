@@ -2,7 +2,7 @@
  * List of known active Feature Flags
  */
  export const FEATURE_FLAGS = {
-    NEW_INDEX_PAGE: 'New_Index_Page',
+    NEW_INDEX_PAGE: 'abtesthome',
   } as const
   
   export type FEATURE_FLAGS = typeof FEATURE_FLAGS[keyof typeof FEATURE_FLAGS]
