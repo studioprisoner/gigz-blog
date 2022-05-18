@@ -65,7 +65,7 @@ const navigation = {
             ))}
           </div>
           <p className="mt-8 text-base text-white md:mt-0 md:order-1">
-            &copy; 2020 Gigz App, All rights reserved.
+            &copy; 2022 Gigz App, All rights reserved.
           </p>
         </div>
         </div>
