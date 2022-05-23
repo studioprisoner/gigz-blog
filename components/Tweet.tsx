@@ -58,7 +58,7 @@ export default function Tweet({
             {author.verified ? (
               <svg
                 aria-label="Verified Account"
-                className="ml-1 text-blue-500 dark:text-white inline h-4 w-4"
+                className="ml-1 text-blue-500  inline h-4 w-4"
                 viewBox="0 0 24 24"
               >
                 <g fill="currentColor">

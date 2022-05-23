@@ -18,14 +18,14 @@ export default function BlogPost({
       <a href={`/blog/${slug}`} className="w-full">
         <div className="w-full mb-8">
           <div className="flex flex-col justify-between md:flex-row">
-            <h4 className="w-full mb-2 text-lg font-medium text-gigz-purple md:text-xl dark:text-white">
+            <h4 className="w-full mb-2 text-lg font-medium text-gigz-purple md:text-xl ">
               {title}
             </h4>
-            <p className="w-32 mb-4 text-left text-slate-800 dark:text-white md:text-right md:mb-0">
+            <p className="w-32 mb-4 text-left text-slate-800  md:text-right md:mb-0">
               {`${views ? new Number(views).toLocaleString() : '–––'} views`}
             </p>
           </div>
-          <p className="text-slate-800 dark:text-white dark:white">{summary}</p>
+          <p className="text-slate-800">{summary}</p>
         </div>
       </a>
   );
