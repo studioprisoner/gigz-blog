@@ -3251,9 +3251,9 @@
   "version" "6.1.1"
 
 "protobufjs@^6.10.0":
-  "integrity" "sha512-4BQJoPooKJl2G9j3XftkIXjoC9C0Av2NOrWmbLWT1vH32GcSUHjM0Arra6UfTsVyfMAuFzaLucXn1sadxJydAw=="
-  "resolved" "https://registry.npmjs.org/protobufjs/-/protobufjs-6.11.2.tgz"
-  "version" "6.11.2"
+  "integrity" "sha512-xL96WDdCZYdU7Slin569tFX712BxsxslWwAfAhCYjQKGTq7dAU91Lomy6nLLhh/dyGhk/YH4TwTSRxTzhuHyZg=="
+  "resolved" "https://registry.npmjs.org/protobufjs/-/protobufjs-6.11.3.tgz"
+  "version" "6.11.3"
   dependencies:
     "@protobufjs/aspromise" "^1.1.2"
     "@protobufjs/base64" "^1.1.2"
@@ -3438,6 +3438,13 @@
     "estree-util-value-to-estree" "^1.0.0"
     "js-yaml" "^4.0.0"
     "toml" "^3.0.0"
+
+"remark-mdx-images@^1.0.3":
+  "integrity" "sha512-+0/EV3SvO9PUaUGlPphM3n5cMsnQE57n2tMwZMiT6YlTKjVr/FuhOynt6WQGEes7enpL3WpbJuycfWGLrH6S5w=="
+  "resolved" "https://registry.npmjs.org/remark-mdx-images/-/remark-mdx-images-1.0.3.tgz"
+  "version" "1.0.3"
+  dependencies:
+    "unist-util-visit" "^2.0.0"
 
 "remark-mdx@^2.0.0":
   "integrity" "sha512-0wXdEITnFyjLquN3VvACNLzbGzWM5ujzTvfgOkONBZgSFJ7ezLLDaTWqf6H9eUgVITEP8asp6LJ0W/X090dXBg=="
@@ -3885,6 +3892,11 @@
   "resolved" "https://registry.npmjs.org/unist-util-generated/-/unist-util-generated-2.0.0.tgz"
   "version" "2.0.0"
 
+"unist-util-is@^4.0.0":
+  "integrity" "sha512-ZOQSsnce92GrxSqlnEEseX0gi7GH9zTJZ0p9dtu87WRb/37mMPO2Ilx1s/t9vBHrFhbgweUwb+t7cIn5dxPhZg=="
+  "resolved" "https://registry.npmjs.org/unist-util-is/-/unist-util-is-4.1.0.tgz"
+  "version" "4.1.0"
+
 "unist-util-is@^5.0.0":
   "integrity" "sha512-F5CZ68eYzuSvJjGhCLPL3cYx45IxkqXSetCcRgUXtbcm50X2L9oOWQlfUfDdAf+6Pd27YDblBfdtmsThXmwpbQ=="
   "resolved" "https://registry.npmjs.org/unist-util-is/-/unist-util-is-5.1.1.tgz"
@@ -3919,6 +3931,14 @@
   dependencies:
     "@types/unist" "^2.0.0"
 
+"unist-util-visit-parents@^3.0.0":
+  "integrity" "sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg=="
+  "resolved" "https://registry.npmjs.org/unist-util-visit-parents/-/unist-util-visit-parents-3.1.1.tgz"
+  "version" "3.1.1"
+  dependencies:
+    "@types/unist" "^2.0.0"
+    "unist-util-is" "^4.0.0"
+
 "unist-util-visit-parents@^4.0.0":
   "integrity" "sha512-1xAFJXAKpnnJl8G7K5KgU7FY55y3GcLIXqkzUj5QF/QVP7biUm0K0O2oqVkYsdjzJKifYeWn9+o6piAK2hGSHw=="
   "resolved" "https://registry.npmjs.org/unist-util-visit-parents/-/unist-util-visit-parents-4.1.1.tgz"
@@ -3934,6 +3954,15 @@
   dependencies:
     "@types/unist" "^2.0.0"
     "unist-util-is" "^5.0.0"
+
+"unist-util-visit@^2.0.0":
+  "integrity" "sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q=="
+  "resolved" "https://registry.npmjs.org/unist-util-visit/-/unist-util-visit-2.0.3.tgz"
+  "version" "2.0.3"
+  dependencies:
+    "@types/unist" "^2.0.0"
+    "unist-util-is" "^4.0.0"
+    "unist-util-visit-parents" "^3.0.0"
 
 "unist-util-visit@^3.0.0":
   "integrity" "sha512-Szoh+R/Ll68QWAyQyZZpQzZQm2UPbxibDvaY8Xc9SUtYgPsDzx5AWSk++UUt2hJuow8mvwR+rG+LQLw+KsuAKA=="

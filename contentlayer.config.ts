@@ -3,6 +3,7 @@ import {
     defineDocumentType,
     makeSource
   } from 'contentlayer/source-files';
+  import { remarkMdxImages } from 'remark-mdx-images';
   
   import readingTime from 'reading-time';
   import remarkGfm from 'remark-gfm';
@@ -51,7 +52,14 @@ import {
     contentDirPath: 'data',
     documentTypes: [Blog],
     mdx: {
-      remarkPlugins: [remarkGfm],
+      remarkPlugins: [remarkGfm, remarkMdxImages],
+      esbuildOptions: (options) => {
+        options.loader = {
+          ...options.loader,
+          '.jpg': 'default',
+        }
+        return options
+      },
       rehypePlugins: [
         rehypeSlug,
         rehypeCodeTitles,
