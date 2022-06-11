@@ -47,7 +47,7 @@ export default function BlogLayout({
                         {post.readingTime.text}
                     </p>
                 </div>
-                <div className='w-full mt-4 prose dark:prose-dark max-w-none'>
+                <div className='w-full mt-4 prose max-w-none'>
                     {children}
                 </div>
                 <div className='text-sm text-gray-700  mt-6'>

@@ -30,19 +30,19 @@ export default function NavBar() {
                         href="/"
                     >
                     <img
-                      className="block lg:hidden h-14 w-auto"
+                      className="block lg:hidden h-20 w-auto"
                       src="https://www.gigz.app/assets/img/gigz-speaker-navbar.svg"
                       alt="Gigz"
                     />
                     <img
-                      className="hidden lg:block h-14 w-auto"
+                      className="hidden lg:block h-20 w-auto"
                       src="https://www.gigz.app/assets/img/gigz-logo-navbar.svg"
                       alt="Gigz"
                     />
                     </a>
                   </div>
                   <div className="hidden sm:block sm:ml-6">
-                    <div className="flex space-x-4">
+                    <div className="flex space-x-4 py-4">
                       {navItems.map((item) => (
                         <a
                           key={item.name}

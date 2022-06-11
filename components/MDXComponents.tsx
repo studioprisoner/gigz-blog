@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ImageWithTheme from './ImageWithTheme';
 
 
 const CustomLink = (props) => {
@@ -32,8 +31,7 @@ function Callout(props) {
 }
 
 const useMDXComponents = {
-    Image: RoundedImage,
-    ImageWithTheme,
+    Image: RoundedImage,    
     a: CustomLink,
     Callout,
 };

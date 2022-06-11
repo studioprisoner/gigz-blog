@@ -28,7 +28,7 @@ export default function Tweet({
     referenced_tweets && referenced_tweets.find((t) => t.type === 'quoted');
 
   return (
-    <div className="tweet rounded-lg border border-gray-200 dark:border-gray-800 px-6 py-4 my-4 w-full bg-white dark:bg-gray-900">
+    <div className="tweet rounded-lg border border-gray-200 px-6 py-4 my-4 w-full bg-white">
       <div className="flex items-center">
         <a
           className="flex h-12 w-12"
@@ -51,7 +51,7 @@ export default function Tweet({
           className="author flex flex-col ml-4 !no-underline"
         >
           <span
-            className="flex items-center font-bold !text-gray-900 dark:!text-gray-100 leading-5"
+            className="flex items-center font-bold !text-gray-900 leading-5"
             title={author.name}
           >
             {author.name}
@@ -90,7 +90,7 @@ export default function Tweet({
           </svg>
         </a>
       </div>
-      <div className="mt-4 mb-1 leading-normal whitespace-pre-wrap text-lg !text-gray-700 dark:!text-gray-300">
+      <div className="mt-4 mb-1 leading-normal whitespace-pre-wrap text-lg !text-gray-700">
         {formattedText}
       </div>
       {media && media.length ? (
@@ -127,7 +127,7 @@ export default function Tweet({
           {format(createdAt, 'h:mm a - MMM d, y')}
         </time>
       </a>
-      <div className="flex !text-gray-700 dark:!text-gray-300 mt-2">
+      <div className="flex !text-gray-700 mt-2">
         <a
           className="flex items-center mr-4 !text-gray-500 hover:!text-blue-600 transition hover:!underline"
           href={replyUrl}

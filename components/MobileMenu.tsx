@@ -83,7 +83,7 @@ export default function MobileMenu() {
 function MenuIcon(props: JSX.IntrinsicElements['svg']) {
     return (
       <svg
-        className="h-5 w-5 absolute text-gray-900 dark:text-gray-100"
+        className="h-5 w-5 absolute text-gray-900"
         width="20"
         height="20"
         viewBox="0 0 20 20"
@@ -111,7 +111,7 @@ function MenuIcon(props: JSX.IntrinsicElements['svg']) {
   function CrossIcon(props: JSX.IntrinsicElements['svg']) {
     return (
       <svg
-        className="h-5 w-5 absolute text-gray-900 dark:text-gray-100"
+        className="h-5 w-5 absolute text-gray-900"
         viewBox="0 0 24 24"
         width="24"
         height="24"
